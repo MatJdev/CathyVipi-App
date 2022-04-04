@@ -32,6 +32,7 @@ class Activity2 : AppCompatActivity() {
         var btnAudio6 = findViewById<Button>(R.id.btnAudio6)
 
         var mediaPlayer: MediaPlayer? = null
+        var mediaPlayer1: MediaPlayer? = null
 
         val audioAttributes = AudioAttributes.Builder()
             .setUsage(AudioAttributes.USAGE_GAME)
@@ -49,11 +50,12 @@ class Activity2 : AppCompatActivity() {
         val sound1 = soundPool1.load(this, R.raw.xocas_happy_hippo,1)
         val sound2 = soundPool1.load(this, R.raw.xokas_calla,1)
         val sound3 = soundPool1.load(this, R.raw.minipekka,1)
-        val sound4 = soundPool1.load(this, R.raw.xokas_calla,1)
+        val sound4 = soundPool1.load(this, R.raw.elxokas_ni_de_conia,1)
 
         var idStreamAudio1 = 0
 
-        mediaPlayer = MediaPlayer.create(this,R.raw.xocas_happy_hippo)
+        mediaPlayer = MediaPlayer.create(this,R.raw.elxokas_no_es_gracioso)
+        mediaPlayer1 = MediaPlayer.create(this,R.raw.elxokas_quiero_que_estes_callado)
 
 
         btnAudio1.setOnClickListener {
@@ -80,7 +82,7 @@ class Activity2 : AppCompatActivity() {
         }
 
         btnAudio6.setOnClickListener {
-            mediaPlayer?.start()
+            mediaPlayer1?.start()
         }
 
 

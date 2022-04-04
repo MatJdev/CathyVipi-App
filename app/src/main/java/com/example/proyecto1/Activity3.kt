@@ -21,6 +21,6 @@ class Activity3 : AppCompatActivity() {
     }
 
     fun showActivity(){
-        Toast.makeText(this, "Está en la activity 4", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Está en la activity 4", Toast.LENGTH_SHORT).show()
     }
 }
