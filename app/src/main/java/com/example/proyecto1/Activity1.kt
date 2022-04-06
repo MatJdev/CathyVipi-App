@@ -18,20 +18,16 @@ class Activity1 : AppCompatActivity() {
         showActivity()
         getAndShowName()
 
-        /*
-
-        val btnCambiarText = findViewById<Button>(R.id.btnCambiarText)
-        btnCambiarText.setOnClickListener {
-            getAndShowName()
-            showMsgBtn()
-            Log.i("DAM 1", "Botón 2 en Actividad2")
-        }
-        */
-
 
         val button2 = findViewById<Button>(R.id.button2)
         button2.setOnClickListener {
             val intento1 = Intent(this, Activity2::class.java)
+            startActivity(intento1)
+        }
+
+        val btnSens = findViewById<Button>(R.id.btnSens)
+        btnSens.setOnClickListener {
+            val intento1 = Intent(this, Activity3::class.java)
             startActivity(intento1)
         }
 
